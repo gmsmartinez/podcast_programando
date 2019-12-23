@@ -1,0 +1,388 @@
+@media screen and (max-width: 762px) {
+
+    nav .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .navLinks {
+        background-color: #0000EC;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 1000;
+        visibility: hidden;
+    }
+    nav .menuIconos {
+        display: block;
+        right: -5rem;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .navLinks{
+        opacity: 0;
+    }
+
+    nav #toggle:checked~.navLinks{
+        opacity: 1;
+    }
+
+    nav #toggle:checked~.menuIconos {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    nav #toggle:checked~.menuIconos .navIconos {
+        background-color: transparent;
+    }
+
+    nav #toggle:checked~.menuIconos .navIconos:before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav #toggle:checked~.menuIconos .navIconos:after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        top: 0;
+    }
+
+    nav #toggle:checked~.navLinks {
+        display: block;
+        max-height: 224px;
+        visibility: visible;
+    }
+
+
+
+    .navLinks{
+        flex-direction: column;
+        padding: 2rem 0 2rem 0;
+    }
+
+
+    .navLinks a {
+        display: block;
+        color: #FFF;
+        margin-top: 1.5%;
+        margin-left: 4%;
+        line-height: 28px;
+    }
+
+    .navLinks a:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .containerPodcast {
+        height: 1600px;
+    }
+
+    .primerAzul {
+        height: 1680px;
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    .podcast h1.tituloEpisodios {
+        font-size: 40px;
+        top: 320px;
+    }
+
+    .iframes {
+        position: relative;
+        top: 6rem;
+        right: -8rem;
+    }
+
+    .containerPodcast iframe {
+        height: 298px;
+        width: 500px;
+    }
+
+    .containerPodcast .iframes .arriba {
+        margin-bottom: 0;
+    }
+
+    .containerNosotros {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .containerNosotros img {
+        width: 360px;
+        height: 500px;
+        top: -3rem;
+        float: none;
+    }
+
+    .containerNosotros .nosotrosInnerTxt {
+        top: 0;
+        text-align: left;
+    }
+
+    
+    .invitados h2 {
+        font-size: 40px;
+        margin-top: 4rem;
+        margin-left: 3.4rem;
+    }
+
+    .containerImg img {
+        width: 50%;
+    }
+
+    .topicosTitulo {
+        font-size: 40px;
+        margin-left: 3.4rem;
+    }
+
+    .topicosGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5em;
+    }
+
+    section.novedades {
+        height: 400px;
+    }
+
+    .novedades h2 {
+        font-size: 40px;
+        margin-top: 2rem;
+    }
+
+    .containerNovedades .botonSecundario {
+        padding: 1em 2em;
+    }
+
+    .containerNovedades .botonSecundario::before {
+        padding: 1em 2em;
+    }
+
+    .footerContenedor {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerContenedor p {
+        position: relative;
+        text-align: center;
+        top: 4rem;
+        left: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footerContenedor .iconos {
+        width: 100%;
+        right: 0;
+    }
+
+    .footerContenedor .iconos  a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        height: 64px;
+        width: 100%;
+        position: relative;
+    }
+
+    nav .logo img {
+        width: 24px;
+        height: 24px;
+        margin-left: -16px;
+    }
+
+    nav .menuIconos {
+        margin-right: 1rem;
+    }
+
+    .navLinks {
+        top: 64px;
+    }
+
+    .navLinks{
+        padding: 1rem 0 1rem 0;
+        opacity: 0;
+    }
+
+    nav #toggle:checked~.navLinks{
+        opacity: 1;
+    }
+
+    .navLinks a {
+        padding-top: 4%;
+    }
+
+    .textoEncabezado {
+        margin-left: 1rem;
+    }
+
+    .textoEncabezado h1 {
+        font-size: 42px;
+        position: relative;
+        top: -2rem;
+
+    }
+
+    .textoEncabezado p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 2rem;
+    }
+
+    .botonPrimario {
+        top: 0;
+        padding: 13px 96px;
+        left: 1.5rem;
+    }
+
+    .botonPrimario::before {
+        padding: 13px 96px;
+    }
+
+    .primerAzul {
+        height: 1680px;
+        clip-path: polygon(0 4%, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    .containerPodcast iframe {
+        width: 260px;
+        height: 298px;
+    }
+
+    .iframes {
+        right: 0;
+        top: -2rem;
+    }
+
+    .iframes .arriba iframe {
+        margin: 0 auto;
+        display: block
+    }
+
+    .iframes .abajo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .iframes .abajo iframe {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .containerPodcast .iframes .arriba>iframe,
+    .containerPodcast .iframes .abajo>iframe {
+        margin-right: 0rem;
+    }
+
+
+
+    .podcast h2.tituloEpisodios {
+        left: -6.9rem;
+        top: 200px;
+    }
+
+    .containerNosotros img {
+        top: -8rem;
+        width: 360px;
+        height: 519px;
+    }
+
+    .containerNosotros .nosotrosInnerTxt {
+        top: -2rem;
+    }
+
+    .containerNosotros .nosotrosInnerTxt h2 {
+        font-size: 36px;
+    }
+
+    .containerNosotros .nosotrosInnerTxt p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .invitados h2 {
+        font-size: 36px;
+        margin-left: 7%;
+    }
+
+    .containerImg img {
+        width: 100%;
+    }
+
+
+
+    .topicosTitulo {
+        font-size: 27px;
+        line-height: 42px;
+        margin-left: 5%;
+    }
+
+    .topicosGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .topicosGrid p {
+        font-size: 24px;
+    }
+
+    .containerNovedades h2 {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .containerNovedades .azul {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .containerNovedades .botonSecundario {
+        padding: 13px 43px;
+    }
+
+    .containerNovedades .botonSecundario {
+        padding: 13px 43px;
+    }
+
+    .containerNovedades .botonSecundario::before {
+        padding: 13px 43px;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    .footerContenedor p {
+        font-size: 12px;
+        line-height: 28px;
+        text-align: center;
+        left: 0;
+    }
+
+    .footerContenedor .iconos {
+        margin-top: 4%;
+    }
+
+    .footerContenedor .iconos a {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
